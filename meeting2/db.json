@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "name": "asdasdasdasdasd",
+      "email": "joni@mail.com",
+      "password": "paulLovers",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "name": "asdasdaasdasdasdsdasdasd",
+      "email": "joni@mail.com",
+      "password": "paulLovers",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "name": "asdasdacxvxcvxcvasdasdasdsdasdasd",
+      "email": "joni@mail.com",
+      "password": "paulLovers",
+      "role": "user",
+      "id": 6
+    }
+  ],
+  "products": [{ "id": 1, "name": "Bisgakuat", "price": 10000, "stock": 50 }],
+  "carts": [{ "id": 1, "productName": "Bisgakuat", "quantity": 10 }]
+}
