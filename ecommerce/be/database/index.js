@@ -1,4 +1,5 @@
 const mysql = require('mysql2')
+const util = require('util')
 
 const db = mysql.createConnection({
     host: "localhost",
@@ -15,4 +16,6 @@ db.connect((err) => {
     console.log("Connected to mysql server")
 })
 
-module.exports = { db }
+const query = util.promisify(db.query).bind(db)
+
+module.exports = { db, query }
