@@ -1,14 +1,15 @@
 const { response } = require('express')
+
 const express = require('express')
-const PORT = 8000
 const app = express()
 const { db } = require('./database')
 const { authRoutes } = require('./routes')
 const cors = require('cors')
-
 app.use(cors())
+require("dotenv").config();
 
 app.use(express.json())
+const PORT = process.env.PORT
 
 // app.get('/users', async (req, res) => {
 //     let fetchQuery = 'SELECT * FROM users'
